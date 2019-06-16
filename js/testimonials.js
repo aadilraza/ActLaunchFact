@@ -55,8 +55,6 @@ function retrieveTestimonials() {
     }
 }
 function viewTestimonial(no) {
-
-    debugger
     if (no < tss.length) {
         var selectedTestimonial = tss[no];
         testimonialTargetName.html(selectedTestimonial.name);

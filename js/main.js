@@ -75,7 +75,7 @@ function onLoad() {
     bs = BulbsSVG.contentDocument;
     BulbsSVGContent = bs.getElementById("content")
     TweenMax.set(BulbsSVGContent, {
-        opacity: 0
+        opacity: 1
     })
     TypewriterSVG = document.getElementById("TypewriterSVG");
     ps = TypewriterSVG.contentDocument;
