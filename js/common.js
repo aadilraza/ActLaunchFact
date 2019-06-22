@@ -78,6 +78,7 @@ function waypointCheck(name) {
 }
 
 function onScroll(event) {
+    debugger;
     if (waypointCheck('#home')) {
         currentWaypoint = '#home';
         updateNavigation();
