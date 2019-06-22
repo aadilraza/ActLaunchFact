@@ -78,7 +78,6 @@ function waypointCheck(name) {
 }
 
 function onScroll(event) {
-    debugger;
     if (waypointCheck('#home')) {
         currentWaypoint = '#home';
         updateNavigation();
@@ -88,13 +87,14 @@ function onScroll(event) {
         updateNavigation();
     }
     if (waypointCheck('#services')) {
-        if (currentWaypoint != "#services") {
-            currentWaypoint = '#services';
-            updateNavigation();
-            animateBulbs();
-            if (!ServicesAnimationComplete) {
-                ServicesAnimationComplete = true;
-            }
+        if (currentWaypoint != "#services") 
+        {
+            // currentWaypoint = '#services';
+            // updateNavigation();
+            // animateBulbs();
+            // if (!ServicesAnimationComplete) {
+            //     ServicesAnimationComplete = true;
+            // }
         }
     }
     if (waypointCheck('#portfolio')) {

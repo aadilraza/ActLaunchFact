@@ -56,7 +56,7 @@ function turnOffLights() {
 }
 
 function onLoad() {
-    debugger;
+    
     var home = $('#home')[0];
     if (window.innerHeight > window.innerWidth) {
         mobile = true;
@@ -1550,6 +1550,7 @@ function hideAllExcept(dont){
 }
 
 function animateBulbs() {
+    debugger;
     if (!ServicesAnimationComplete) {
         TweenMax.to(BulbsSVGContent, 1, {
                 opacity: 1
@@ -1571,7 +1572,7 @@ function animateBulbs() {
         Bulb7Light = bs.getElementById("Bulb7-Light");
         Bulb8Light = bs.getElementById("Bulb8-Light");
         $(Bulb1).click(function () {
-            debugger;
+            
             hideAllExcept(1)
             var target = $('#b-a-parent');
             if (target.css('display') == "none") {
